@@ -24,6 +24,19 @@ async function SearchBtn(){
     }
 }
 
-async function SearchMovie(){
-    
-}
+const SearchMovie = async () => {
+    const response = await fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=85231d93&s='+document.getElementById('Input_Field').value.trim(), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const Apidata = await response.json(); 
+    console.log(Apidata);
+    var divclass='<div class="row">';
+    for(var i = 0; i < Apidata.response.length; i++){
+        divclass += ''
+        if(i % 3 === 0)
+            divclass += ''
+    }
+  }
