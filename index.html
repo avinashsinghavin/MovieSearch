@@ -27,52 +27,39 @@
             </ul>
         </div>
     </nav>
-    <div class="container" id="Fill_Detaile">
+    <div id="EnterMovieName">
+        Enter movie name in search bar
+    </div>
+    <div id="moviedetails" class="container" style="background-color:rgb(176, 202, 255); border-radius: 10px; padding: 10px;">
         <div class="row">
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
+          <div class="col-6" style="padding: 20px;">
+            <img id = "image" src="NoMovie.jpg" style="float: right;">
+          </div>
+          <div class="col-6" style="float: left; padding: 20px;">
+            <h2>Movie Name</h2>
+            <div style="padding-left: 5%; border-radius: 5px; border-width: thin; border-color: gray; border-style: solid;">
+                <p id="genre"></p>
+                <p id="released"></p>
+                <p id="rated"></p>
+                <p id="imdb"></p>
+                <p id="writer"></p>
+                <p id="actors"></p>
             </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10px; padding-left: 10%; padding-right: 20px; padding-bottom: 20px;">
+            <div class="col" style="border-radius: 5px; border-width: thin; border-color: gray; border-style: solid;">
+                <h3>Plot</h3>
+                <h6 style="padding-left: 20px;" id="plot"></h6>
             </div>
         </div>
+      </div>
+    <div class="container" id="Fill_Detaile">
         <div class="row">
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-            <div class="col" style="background-color: silver; margin: 5px; text-align: center;">
-                <img src="https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="rounded img-fluid d-block">
-                <h1>Hello World</h1>
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-warning" type="submit" onclick="SearchBtn()">Search</button>
-            </div>
-        </div>  
+            
+        </div>
     </div>
+    
 
 
     <script src="indexscript.js"></script>
