@@ -2,6 +2,7 @@ var MovieList = "";
 var imdbid = '';
 async function searchfunction(key) {
     if(key.keyCode === 13) {
+        document.getElementById('moviedetails').style.display = 'none';
         if(document.getElementById('MovieType').value === 'Movies')
             SearchMovie();
         if(document.getElementById('MovieType') === 'Songs'){
@@ -15,6 +16,7 @@ async function searchfunction(key) {
 }
 
 async function SearchBtn(){
+    document.getElementById('moviedetails').style.display = 'none';
     if(document.getElementById('MovieType').value === 'Movies'){
         SearchMovie();
     }
