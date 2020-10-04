@@ -42,12 +42,12 @@ const SearchMovie = async () => {
         var divclass='<div class="row">';
         for(var i = 0; i < Apidata.Search.length; i++){
             if(Apidata.Search[i].Poster === "N/A" )
-                divclass += '<div class="col" id="'+Apidata.Search[i].imdbID+'" style="background-color: silver; margin: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px; border-radius: 10px;"><img src="NoMovie.jpg" alt="'+Apidata.Search[i].Title+'"><h3>'+Apidata.Search[i].Title+'</h3><button type="button" class="btn btn-info" onclick="MovieDetails('+i+')">Movie Details</button></div>';
+                divclass += '<div class="col-md-4" id="'+Apidata.Search[i].imdbID+'"><div class="jumbotron p-3 text-center"><img width=100% src="NoMovie.jpg" alt="'+Apidata.Search[i].Title+'"><h3>'+Apidata.Search[i].Title+'</h3><button type="button" class="btn btn-info" onclick="MovieDetails('+i+')">Movie Details</button></div></div>';
             else
-                divclass += '<div class="col" id="'+Apidata.Search[i].imdbID+'"style="background-color: silver; margin: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px; border-radius: 10px;"><img src="'+Apidata.Search[i].Poster+'" alt="'+Apidata.Search[i].Title+'"><h3>'+Apidata.Search[i].Title+'</h3><button type="button" class="btn btn-info" onclick="MovieDetails('+i+')">Movie Details</button></div>';
+                divclass += '<div class="col-md-4" id="'+Apidata.Search[i].imdbID+'"><div class="jumbotron p-3 text-center"><img width=100% src="'+Apidata.Search[i].Poster+'" alt="'+Apidata.Search[i].Title+'"><h3>'+Apidata.Search[i].Title+'</h3><button type="button" class="btn btn-info" onclick="MovieDetails('+i+')">Movie Details</button></div></div>';
         }
         document.getElementById('EnterMovieName').style.display='none';
-        document.getElementById('Fill_Detaile').innerHTML = divclass+"</div>";
+        document.getElementById('Fill_Detail').innerHTML = divclass+"</div>";
     } 
     else {
         alert(Apidata.Error);
