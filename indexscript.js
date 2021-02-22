@@ -29,7 +29,7 @@ async function SearchBtn(){
 }
 
 const SearchMovie = async () => {
-    const response = await fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=3de1df4d&s='+document.getElementById('Input_Field').value.trim(), {
+    const response = await fetch('http://www.omdbapi.com/?apikey=3de1df4d&s='+document.getElementById('Input_Field').value.trim(), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
