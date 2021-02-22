@@ -58,7 +58,7 @@ const SearchMovie = async () => {
 const MovieDetails = async (Movieindex) => {
     console.log(Movieindex);
     console.log(MovieList["Search"][Movieindex].imdbID);
-    const response = await fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=3de1df4d&i='+MovieList["Search"][Movieindex].imdbID, {
+    const response = await fetch('http://www.omdbapi.com/?apikey=3de1df4d&i='+MovieList["Search"][Movieindex].imdbID, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
